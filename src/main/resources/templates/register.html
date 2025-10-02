@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<section>
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+			<div class="container">
+				<a class="navbar-brand" href="#">User Management</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarNav" aria-controls="navbarNav"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" th:href="@{/home}">Home</a></li>
+						<li class="nav-item"><a class="nav-link"
+							th:href="@{/register}">Register</a></li>
+						<li class="nav-item"><a class="nav-link" th:href="@{/login}">Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Register Page Header -->
+		<div class="container my-5">
+			<h1 class="text-center mb-4">Register Page</h1>
+			<!-- Registration Form -->
+			<div class="row justify-content-center">
+				<div class="col-md-6">
+					<div class="card shadow-sm">
+
+						<!-- <th:block th:if="${session.msg}">
+					 <p class="text-center text-success">[[${session.msg}]]</p>
+  					 <th:block th:text="${@userService.removeSessionMessage()}"></th:block>
+  					 </th:block> -->
+
+						<!-- register.html -->
+						<div th:if="${msg}">
+							<p class="text-center text-success">[[${msg}]]</p>
+						</div>
+
+
+						<div class="card-body">
+							<form action="saveUser" method="post">
+								<!-- Full Name Input -->
+								<div class="form-group">
+									<label for="fullName">Enter Full Name</label> <input
+										type="text" class="form-control" name="username" required
+										placeholder="Full Name">
+								</div>
+								<!-- Email Input -->
+								<div class="form-group">
+									<label for="email">Enter Email</label> <input type="email"
+										class="form-control" name="email" required
+										placeholder="Email Address">
+								</div>
+								<!-- Mobile Number Input -->
+								<div class="form-group">
+									<label for="mobile">Enter Mobile Number</label> <input
+										type="tel" class="form-control" name="mobileno" required
+										placeholder="Mobile Number">
+								</div>
+								<!-- Password Input -->
+								<div class="form-group">
+									<label for="password">Enter Password</label> <input
+										type="password" class="form-control" name="password" required
+										placeholder="Password">
+								</div>
+								<!-- Submit Button -->
+								<button type="submit" class="btn btn-primary btn-block">Submit</button>
+							</form>
+							<!-- Optional Footer with Login Link -->
+							<div class="text-center mt-3"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
