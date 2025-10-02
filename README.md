@@ -82,3 +82,15 @@ Feel free to open issues or submit pull requests.
 Author
 Anil Kumar Vishwakarma
 GitHub: https://github.com/IamAnilVishwakarma
+
+<img width="1366" height="726" alt="Registration page" src="https://github.com/user-attachments/assets/0f8bf0ca-0e34-4d86-9e1c-e0ce741e91f5" />
+<img width="1104" height="529" alt="Email Verification" src="https://github.com/user-attachments/assets/8945f740-a42b-43f1-b280-ea23997df2ca" />
+<img width="1244" height="320" alt="Email_Verification_Configuration" src="https://github.com/user-attachments/assets/9920351b-0277-44d4-99b1-236a4bc1554c" />
+<img width="1366" height="685" alt="Login_Page" src="https://github.com/user-attachments/assets/61c30149-5de7-443b-b25d-69620176c039" />
+<img width="1364" height="419" alt="Login_Details" src="https://github.com/user-attachments/assets/5ae24ef2-891e-4a7a-b4de-006fdf0f859c" />
+<img width="1060" height="144" alt="Database" src="https://github.com/user-attachments/assets/c903d813-06e3-4652-8157-af01763d0bc5" />
+
+
+
+
+
